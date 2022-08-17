@@ -7,76 +7,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Arkaprava Sarkar">
   <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio Website, Personal Website">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
+  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/80dc30ae7d.js" crossorigin="anonymous"></script>
   <title>Portfolio Site</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
 </head>
 
 <body>
+  <embed src="/audio/bgm.mp3" loop="true" autostart="true" hidden="true" >
   <header>
     <nav>
       <ul>
         <a href="#intro"><span>Home</span></a>
         <a href="#aboutSection"><span>About</span></a>
-        <a href="Blogs"><span>Blogs</span></a>
+        <a href="#blogs"><span>Blogs</span></a>
         <a href="#skills"><span>Skills</span></a>
         <a href="#contact"><span>Contact</span></a>
       </ul>
     </nav>
     <div id="intro" class="intro">
-      Hello,<b> I'm Arkaprava Sarkar</b> <br />
-      <h3>Web Developer , Software Engineer</h3>
+      Hello,I'm <b>Arkaprava Sarkar</b>
       <br />
-     <!-- <a href="https://github.com/arkasarkar2000">
-        <button class="my-workBtn">View my work -></button>
-        <div class="my-workBtn-bg"></div> 
-      </a> -->
+      <div class ="typewriter"><h2>Coder, Web Dev, Software Dev</h2></div>
+      <br />
+      <a href="https://drive.google.com/file/d/1jl00osWGpKceSn_ySrI7ng5Eq0NMQMQU/view?usp=sharing" target="_blank">
+        <button class="my-resumeBtn"> View Resume</button>
+        <div class="my-resumeBtn-bg"></div> 
+      </a> 
     </div>
   </header>
 
   <section id="aboutSection" class="aboutSection">
     <div class="about">About</div>
     <div class="about-data">
+      Hello , My name is Arkaprava Sarkar <br> I have completed my Engineering from Calcutta Institute of Engineering & Management
+      Currently I am working as a Software Developer and have interest in Web Development , Cyber Security.
+      For further information check out my projects & blogs below 
+
 
     </div>
+  </section>
+
+  <section id="blogs" class ="blogs">
+    <div class="blog">Blogs</div>
+
   </section>
 
   <section id="skills" class="skillsSection">
     <div class="skills">Skills</div>
     <div class="skills-data">
       <div>
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>Javascript</div>
+        <div><i class="fa-brands fa-html5" style="font-size: 300%"></i></div>
+        <div><i class="fa-brands fa-css3" style="font-size: 300%"></i></div>
+        <div><i class="fa-brands fa-js" style="font-size: 300%"></i></div>
       </div>
       <br />
       <div>
-        <div>JAVA</div>
-        <div></div>
-        <div>MySQL</div>
+        <div><i class="fa-brands fa-java" style="font-size: 300%"></i></div>
+        <div><i class="fa-brands fa-c" style="font-size: 300%"></i></div>
+        <div>C++</div>
+        <div><i class="fa-solid fa-database" style="font-size: 300%"></i></div>
       </div>
+    </section>
 
-      <section id="contact" style="color: white" class="contactSection">
+      <section id="contact" class="contactSection">
         <div class="contact">Contact</div>
         <div class="contactInfo">
-          <div class="pp">
+          <!--<div class="pp">
             <img src="./img/pp.jpeg" alt="profile-pic" />
-          </div>
+          </div>-->
           <br />
           <div class="contact-sources">
-            E-mail:- arkaa.work@gmail.com
-            <br />
-            git:-
-            <a href="https://github.com/arkasarkar2000" target="_blank">https://github.com/arkasarkar2000<a/a>
-            <br />
-            linkdIn:-
-            <a href="https://www.linkedin.com/in/arkaprava-sarkar-094808214/" target="_blank">
-              https://www.linkedin.com/in/arkaprava-sarkar-094808214/ </a>
-            <br />
-            Phone no. :- 7439373966
+          
+            <a href="https://github.com/arkasarkar2000" target="_blank"><i class="fa-brands fa-github" style="font-size: 300%"></i> </a>
+          
+            <a href="https://www.linkedin.com/in/arkaprava-sarkar-094808214/" target="_blank"><i class="fa-brands fa-linkedin" style="font-size: 300%">
+              </i></a>
+            
+            <a href="https://twitter.com/IamarSarkar" target="_blank"><i class="fa-brands fa-twitter" style="font-size: 300%"></i> </a>
+            </br>
+
           </div>
         </div>
       </section>

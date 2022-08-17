@@ -3,54 +3,57 @@
   margin: 5px;
   padding: px;
 }
+
+header img{
+  height: 50px;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family:Arial, Helvetica, sans-serif;
-  background-image: url("img/bg-main5.gif");
-  background-;
+  font-family: monospace;
+  background-image: url("img/madara.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   background-attachment: fixed;
 }
 
 header {
   height: 100vh;
-  width: 100%;
+  width: 100%
 }
 nav {
   height: 5vh;
   width: 100%;
   position: fixed;
-  background-color: black;
-  z-index: 0;
+  z-index: 2;
 }
 nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0px;
+  margin: 0 5px;
   justify-content: center;
   /* background-color:aquamarine; */
-
   height: 100%;
-  width: 100%; 
+ 
 }
 nav ul span {
   margin-right: 20px;
   padding: 5px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background-color: none;
   font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: aliceblue;
 }
 nav ul span:hover {
   padding: 10px;
   background-color: rgb(255, 255, 255);
-  font-size: 22px;
+  font-size: 24px;
   border-radius: 10px 0px;
-  color: purple;
+  color: blue;
 }
 a {
   text-decoration: none;
@@ -71,38 +74,72 @@ a:hover {
   left: 30px;
   border: 0px solid black;
   padding: 8px;
-  color: whitesmoke;
-  box-shadow: 5px 0px 5px black;
+  color: rgb(196, 8, 177);
+  /*box-shadow: 5px 0px 5px black;*/
   font-size: 35px;
+  background-color: transparent;
+  height: 30%;
+
+}
+
+.typewriter h2 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
 
 .intro b {
-  color: coral;
-}
-
-/* .my-workBtn {
-  position: relative;
-  z-index: 1;
-  background-color: transparent;
   color: white;
-  padding: 8px 18px;
-  cursor: pointer; 
 }
-.my-workBtn:hover {
-   height: 32.5px;
-  width: 137px; 
-  background: purple;
-   transform: translateY(-36px); 
+ 
+
+ .my-resumeBtn {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
-  .my-workBtn:hover {
-      background-color: purple;
-    } 
- .my-workBtn-bg {
+.my-resumeBtn:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg); 
+}
+ .my-resumeBtn-bg {
   transition: all 0.3s ease-in;
   height: 32.5px;
   width: 0;
   transform: translateY(-36px);
-} */
+} 
 
 /* About section */
 .aboutSection {
@@ -110,28 +147,30 @@ a:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-/*   background-image: url("img/c-bg.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 52px 0 52px 0;
-  height: 90vh;
-  /* width: 106%; */
+  padding: 10px;
+  height: 50vh;
+  background-color: transparent;
+  left: 50%;
+  width: auto;
 }
 
 
 .about {
-  width: 100%;
+  width: 20%;
   height: 60px;
-  background: transparent;
-  font-size: 60px;
-  padding: 30px 0;
-  color: purple;
+  background-color: bisque;
+  font-size: 50px;
+  padding: 0px;
+  color: black;
+  display: inline;
 }
 .about-data {
   width: 60%;
-  color: white;
+  color: silver;
   margin: 20px 0;
   padding: 10px;
   font-size: 30px;
@@ -197,14 +236,24 @@ display:none;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10px;
+  height: 40vh;
+  left: 50%;
+  width: auto;
+  background-color:transparent;
 }
 .skills {
-  width: 100%;
+  width: 20%;
   height: 60px;
-  background: transparent;
-  font-size: 60px;
-  padding: 30px 0;
-  color: purple;
+  background-color: bisque;
+  font-size: 50px;
+  padding: 0px;
+  color: black;
+  display: inline;
 }
 .skills-data {
   display: flex;
@@ -219,7 +268,7 @@ display:none;
 }
 .skills-data div div {
   padding: 11px 15px;
-  background-color: purple;
+  background-color: transparent;
   margin: 5px;
 }
 
@@ -229,32 +278,43 @@ display:none;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 50px 0;
-  background-image: url("img/bg-head.jpg");
+  padding: 10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-color: transparent;
+  width: auto;
+  height: 40vh;
+  
+
 }
 .contact {
-  width: 100%;
+  
+  width: 30%;
   height: 60px;
-  background: transparent;
-  font-size: 60px;
-  padding: 30px 0;
-  color: purple;
-  margin: 50px;
+  background-color: bisque;
+  font-size: 50px;
+  padding: 0px;
+  color: black;
+  display: inline;
 }
-.pp img {
+
+
+
+}
+/*.pp img {
   border-radius: 50%;
   height: 300px;
   width: 300px;
-}
+}*/
 .contact-sources {
   font-size: 25px;
+  
 }
+
 footer {
-  background-color: purple;
+  background-color: transparent;
   font-size: 10px;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
