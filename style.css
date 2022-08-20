@@ -1,7 +1,6 @@
 *{
   scroll-behavior: smooth;
   margin: 5px;
-  padding: px;
 }
 
 header img{
@@ -17,6 +16,7 @@ body {
   background-repeat: no-repeat;
   background-size:cover;
   background-attachment: fixed;
+  font-size: 12px;
 }
 
 header {
@@ -174,6 +174,115 @@ a:hover {
   margin: 20px 0;
   padding: 10px;
   font-size: 30px;
+}
+
+.blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10px;
+  height: 45vh;
+  background-color: transparent;
+  left: 50vh;
+  width: auto;
+}
+
+.blogs-title {
+    width: 20%;
+    height: 60px;
+    background-color: bisque;
+    font-size: 50px;
+    padding: 0px;
+    color: black;
+    display: inline;
+}
+
+.blogs-data{
+  background: gray;
+  max-width: 550px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  position: relative;
+  height: 250px;
+  width: 900px;
+}
+
+
+.container_copy {
+  padding: 40px;
+  width: 480px;
+  justify-content: center;
+}
+
+.img_pod {
+  height: 110px;
+  width: 110px;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  z-index: 10;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  position: absolute;
+  left: -10%;
+  top: -13%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 8.3rem;
+  width: 8.3rem;
+  position: relative;
+  border-radius: 100%;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+h3 {
+  margin: 0 0 0.5rem 0;
+  color: white;
+}
+
+h1 {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: black;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.45;
+  color: white;
+  text-align: center;
+  padding: 8px;
+}
+
+.btn_primary {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.btn_primary:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg); 
 }
 
 /* my project section */
